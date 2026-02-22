@@ -2,7 +2,7 @@ const app = document.getElementById('app');
 
 
 const routes = {
-    '/': '<h1>Witaj w SPA</h1><p>Wybierz Galerię lub Kontakt.</p>',
+    '/': '<h1>Witaj Świecie!</h1><p>Bottom text</p>',
     '/gallery': `
         <h1>Galeria</h1>
         <div class="gallery-grid">
