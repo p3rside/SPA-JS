@@ -43,3 +43,21 @@ nav a { color: white; margin-right: 15px; text-decoration: none; }
 
 #contact-form { display: flex; flex-direction: column; max-width: 400px; gap: 10px; padding: 20px; }
 #contact-form input, #contact-form textarea { padding: 10px; }
+
+/* Standardowe kolory */
+body {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+
+/* Kolory dla trybu ciemnego */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+/* Dostosuj nawigację i inne elementy */
+body.dark-mode nav {
+    background-color: #333;
+}

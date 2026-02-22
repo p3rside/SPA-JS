@@ -126,6 +126,20 @@ document.body.addEventListener('click', e => {
     }
 });
 
+// Logika przełączania trybu
+document.getElementById('theme-toggle').addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    
+    // Opcjonalnie: zapisz wybór w przeglądarce
+    const isDark = document.body.classList.contains('dark-mode');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+});
+
+// Sprawdź zapisany motyw przy starcie
+if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark-mode');
+}
+
 
 window.onpopstate = () => render(window.location.pathname);
 
