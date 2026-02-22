@@ -1,29 +1,17 @@
 const app = document.getElementById('app');
 
-
 const routes = {
-    '/': '<h1>Witaj Świecie!</h1><p>Bottom text</p>',
-    '/gallery': `
-        <h1>Galeria</h1>
-        <div class="gallery-grid">
-            <img class="gallery-item lazy-blob" data-src="https://picsum.photos/800/800?random=1">
-            <img class="gallery-item lazy-blob" data-src="https://picsum.photos/800/800?random=2">
-            <img class="gallery-item lazy-blob" data-src="https://picsum.photos/800/800?random=3">
-            <img class="gallery-item lazy-blob" data-src="https://picsum.photos/800/800?random=4">
-            <img class="gallery-item lazy-blob" data-src="https://picsum.photos/800/800?random=5">
-            <img class="gallery-item lazy-blob" data-src="https://picsum.photos/800/800?random=6">
-            <img class="gallery-item lazy-blob" data-src="https://picsum.photos/800/800?random=7">
-            <img class="gallery-item lazy-blob" data-src="https://picsum.photos/800/800?random=8">
-            <img class="gallery-item lazy-blob" data-src="https://picsum.photos/800/800?random=9">
-        </div>
-    `,
+    '/': '<h1>Witaj w SPA</h1>...',
+    '/gallery': `...`, // kod galerii
     '/contact': `
         <h1>Kontakt</h1>
         <form id="contact-form">
             <input type="text" id="name" placeholder="Imię" required>
             <input type="email" id="email" placeholder="Email" required>
             <textarea id="message" placeholder="Wiadomość" required></textarea>
+            
             <div class="g-recaptcha" data-sitekey="6LcQYXQsAAAAAGWCVv5kdaaqhzTJgeFiJfW-i2eq"></div>
+            
             <button type="submit">Wyślij</button>
         </form>
     `
